@@ -42,7 +42,7 @@
                 <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
             </p>
             <p>Login in. To see it in action.</p>
-            <form class="m-t" role="form" action="index.html">
+            <form class="m-t" role="form" action="home/process" method="post">
                 <div class="form-group">
                     <input type="email" class="form-control" placeholder="Username" required="">
                 </div>

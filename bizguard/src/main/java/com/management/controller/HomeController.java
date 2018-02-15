@@ -23,14 +23,14 @@ public class HomeController {
 	public String index(ModelMap model){
 		
 		try{	
-			System.out.print("\nBegin");
+			System.out.print("\nBegin index");
 			model.addAttribute("message","from controller");
 		
 			List<String> reciepients = new ArrayList<String>();
 			reciepients.add("arsalan@rethinktechs.com");
 					
 
-			System.out.print("\nWorking end!!!");
+			System.out.print("\n Index Working end!!!");
 		}
 		catch(Exception ex){
 			System.out.print("exception : " + ex.getMessage());
@@ -40,6 +40,24 @@ public class HomeController {
 		return "home";
 	}
 
+
+	@RequestMapping(value = "/process", method = RequestMethod.POST)
+	public String process(ModelMap model){
+		
+		try{	
+			System.out.print("\nBegin");
+			model.addAttribute("message","process controller");
+			model.addAttribute("title","Welcome Page");
+			System.out.print("\nWorking end!!!");
+		}
+		catch(Exception ex){
+			System.out.print("exception : " + ex.getMessage());
+		}		
+		
+		return "welcome";
+	}
+
+	
 	@RequestMapping(value = "/welcome", method = RequestMethod.GET)
 	public String welcome(ModelMap model){
 		
