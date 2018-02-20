@@ -44,10 +44,10 @@
             <p>Login in. To see it in action.</p>
             <form class="m-t" role="form" action="home/process" method="post">
                 <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Username" required="">
+                    <input name="UserName" id="UserName" type="email" 		class="form-control" placeholder="Username" value="arsalan@home.com" required="">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password" required="">
+                    <input name="UserPassword" id="UserPassword"  type="password" 	class="form-control" placeholder="Password" value="as"required="">
                 </div>
                 <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
 
